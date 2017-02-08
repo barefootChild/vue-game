@@ -1,0 +1,44 @@
+{
+  "name": "vue-game",
+  "version": "1.0.0",
+  "description": "this is a vue project for gaming",
+  "main": "main.js",
+  "scripts": {
+    "start": "browser-sync start --server dist/",
+    "dev": "webpack-dev-server --host 0.0.0.0 --inline --progress --compress --profile --colors --watch --hot --display-error-details --content-base dist/",
+    "build": "rimraf dist && webpack --config webpack.prod.config.js --progress --profile --colors --display-error-details --display-cached  --bail"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^2.22.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "node-sass": "^3.8.0",
+    "rimraf": "^2.5.3",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "vue-hot-reload-api": "^1.3.3",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^8.5.3",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "open-browser-webpack-plugin": "0.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.14.0",
+    "vue": "^1.0.18",
+    "vue-router": "^0.7.13"
+  },
+  "keywords": [
+    "vue",
+    "webpack"
+  ],
+  "author": "zhaoyongsheng",
+  "license": "ISC"
+}
