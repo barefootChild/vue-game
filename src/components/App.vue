@@ -8,7 +8,9 @@
                     @click="moveFn($index)"
             ></li>
         </ul>
-        <button class="btn btn-warning btn-block btn-reset" @click="render">重置游戏</button>
+        <p class="foot">
+            <button class="btn-reset" @click="render">重置游戏</button>
+        </p>
     </div>
 </template>
 <style rel="stylesheet/scss" type="text/css">
@@ -49,8 +51,10 @@
         box-shadow: inset 2px 2px 18px;
     }
 
-    .btn-reset {
-        box-shadow: inset 2px 2px 18px;
+    .foot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 </style>
 <script>
